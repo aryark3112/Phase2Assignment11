@@ -16,7 +16,7 @@ namespace DynamicWebPage_MasterPage
         {
             try
             {
-                SqlConnection con = new SqlConnection("server=;database=ContentDB;trusted_connection=true");
+                SqlConnection con = new SqlConnection("server=DESKTOP-F3HQTBE;database=ContentDB;trusted_connection=true");
                 SqlCommand cmd = new SqlCommand("SELECT * FROM Articles", con);
                 con.Open();
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);

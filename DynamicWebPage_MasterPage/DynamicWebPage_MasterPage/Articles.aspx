@@ -18,8 +18,9 @@
             <tr>
                 <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:GridView ID="GridView1" runat="server" CssClass="auto-style1" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal"  PageSize="4" Width="692px" DataSourceID="SqlDataSource1" >
+                    <asp:GridView ID="GridView1" runat="server" CssClass="auto-style1" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal"  PageSize="4" Width="692px" DataSourceID="SqlDataSource1" AllowPaging="True" AllowSorting="True" >
                         <Columns>
+                            <asp:CommandField ShowSelectButton="True" />
                             <asp:BoundField />
                             <asp:BoundField HeaderText="Column3" />
                         </Columns>
